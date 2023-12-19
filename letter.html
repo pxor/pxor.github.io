@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Letter</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('https://img.freepik.com/free-vector/elegant-valentine-background-with-lighting-effect_1340-4358.jpg?w=1380&t=st=1702987674~exp=1702988274~hmac=c2f30dfb4bdef5343af4656ff2f699e4aea93a47471f4c240e4ce62f944fbcc6');
+            background-size: cover;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        #envelope {
+            width: 350px;
+            background-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #envelope img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid #db223b;
+            border-radius: 10px;
+        }
+
+        #envelope:hover {
+            transform: translate(-50%, -60%);
+        }
+
+        #letter-container {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 600px;
+            padding: 20px;
+            background-image: url('https://img.freepik.com/free-vector/glitter-pink-leafy-frame_53876-116089.jpg?w=740&t=st=1702987448~exp=1702988048~hmac=57a4cab6b03a890cd577df92649546d2c138f7623662696724cbf6b3f05eef3d'); /* Replace with your image URL */
+            background-size: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #sender-info {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            border: 1px, solid black;
+            font-size: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            -webkit-text-stroke: 2px black; /* For WebKit/Blink browsers (Chrome, Safari) */
+            color: rgb(133, 206, 255); /* Set the text color */
+
+        }
+
+        #letter-content {
+            text-align: justify;
+        }
+
+        #closing {
+            margin-top: 20px;
+        }
+
+        #signature {
+            margin-top: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div id="envelope" onclick="revealLetter()">
+    <img src="https://img.freepik.com/free-photo/love-letter-st-valentine-concept_54231-36.jpg?w=1800&t=st=1702986608~exp=1702987208~hmac=bbe7eea99e0ecc9e2fc3ac274fd911c9e8d6997408dfab723f21a0aeb2d678e7" alt="Love Letter Envelope">
+</div>
+
+<div id="letter-container">
+    <div id="sender-info">
+        <p>Маги, Честит Рожден Ден!</p>
+    </div>
+
+    <div id="letter-content">
+        <p>Дата: 20.12.2023</p>
+
+        <p>Любов моя, да си винаги така усмихната и щастлива<br>
+           Да си изпълнена с живот и радост<br>
+           И аз до теб да се наслаждаваме на всички красиви моменти заедно </p>
+
+        <p>Чудех се какво да ти подаря за първия ти рожден ден, който празнуваме заедно<br>
+            и реших да ти пратя това, прекрасна моя:</p>
+        <p>-----------------</p>
+        <p>Откакто сърцето ми докосваш<br>
+            Болката в него отшумя<br>
+            И с обич тялото пробождаш<br>
+            Червилото от устните искам да сваля</p>
+
+        <p>Ако можех времето да връщам<br>
+            Моя да те направя от преди<br>
+            Тялото ти нежно да докосвам<br>
+            Ефирна нежност да ме плени</p>
+
+        <p>Магьоснице, в съня ми се прокрдна<br>
+            Апатичният живот ми спаси<br>
+            Гледам и не мога да ти се нарадвам<br>
+            Искрено предлагам ти се и ме вземи</p>
+        <p>-----------------</p>
+        <p>Като последен подарък, прочети всяка първа буква :3</p>
+    </div>
+    
+    <div id="signature">
+        <p>Forever Yours Babe,</p>
+        <p>Your loving half - Nedy💕</p>
+    </div>
+</div>
+
+<script>
+    function revealLetter() {
+        document.getElementById('envelope').style.display = 'none';
+        document.getElementById('letter-container').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
